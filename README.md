@@ -1,2 +1,5 @@
 # hope-s_portfolio
-Professional Portfolio
+
+Hello my name is Hope Johnson.
+
+** This is my first project 
