@@ -1,5 +1,5 @@
-title: "Michael Shoemaker — Data Engineering"
-description: "Production-like data engineering builds, explained clearly."
+title: "Hope Johnson — Data Science"
+description: "Student and Aspiring Data Scientist demonstrating Python, SQL, and R skills through projects focused on analytics and predictive modeling"
 baseurl: ""
 url: ""
 markdown: kramdown
@@ -9,9 +9,8 @@ defaults:
   - scope: { path: "" }
     values:
       layout: default
-author: "Michael Shoemaker"
-github_username: "MichaelShoemaker"
-youtube_channel: "@dataslinger6379"
-medium_username: "dataslinger"
+author: "Hope Johnson"
+github_username: "mhopejohnd"
 exclude:
   - "README.md"
+
