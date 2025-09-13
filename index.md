@@ -22,21 +22,18 @@ title: "Home"
 <section id="about" class="section">
   <div class="about-container">
     <img src="{{ '/assets/images/me.jpeg' | relative_url }}"
-         alt="Michael Shoemaker"
+         alt="Hope Johnson"
          class="profile-pic">
 
     <div class="about-text">
-      <h1>Hello World! I'm Michael Shoemaker</h1>
-      <p>Senior Data Analyst | Teacher | Content Creator | .5x Programmer</p>
-      <p>I build practical, production-like data engineering systems — orchestration, storage, transformations, serving, and observability — then explain the decisions behind them.</p>
-      <p><strong>Core skills:</strong> Python · SQL · Linux · Airflow · Spark · BigQuery · Docker · GCP</p>
+      <h1>Hey there ! I'm Hope Johnson</h1>
+      <p>Aspiring Data Scientist | M.S. Data Science Student</p>
+      <p>A data science student growing in machine learning and data visualization, with technical stengths in Python and SQL. Seeking to apply my analytical skills and passion for innovation to contribute to a forward-thinking team and drive measurable impact. </p>
+      <p><strong>Core skills:</strong> Python · SQL · R · Tableau · BigQuery · Excel </p>
 
       <p class="social-links">
-        <a href="https://www.linkedin.com/in/michaelshoemaker1" target="_blank" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/hopemdjohnson" target="_blank" aria-label="LinkedIn">
           <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://www.youtube.com/@dataslinger6379" target="_blank" aria-label="YouTube">
-          <i class="fa-brands fa-youtube"></i>
         </a>
       </p>
     </div>
@@ -92,61 +89,6 @@ title: "Home"
           <div class="card-actions">
             {% if item.screenshot %}<a href="#" class="btn ghost" data-lightbox-src="{{ item.screenshot | relative_url }}">Preview</a>{% endif %}
             <a class="btn" href="{{ item.link }}" target="_blank" rel="noopener">Open</a>
-          </div>
-        </div>
-      </article>
-      {% endfor %}
-    </div>
-  {% endif %}
-</section>
-
-<!-- ===================== Videos ===================== -->
-<section id="videos" class="section">
-  <div class="section-header">
-    <h2>🎥 Videos</h2>
-    <a class="view-all" href="https://youtube.com/{{ site.youtube_channel }}" target="_blank" rel="noopener">Channel →</a>
-  </div>
-
-  {% assign videos_count = site.data.videos | size %}
-  {% if videos_count > 4 %}
-    <div class="carousel">
-      <button class="scroll-btn left" data-target="#videos-track" aria-label="Scroll videos left">‹</button>
-      <div id="videos-track" class="carousel-track" role="region" aria-label="Videos list">
-        {% for item in site.data.videos %}
-        <article class="card">
-          <a class="thumb" href="{{ item.link }}" target="_blank" rel="noopener" aria-label="Open video">
-            <img src="{{ item.image | default: '/assets/images/placeholder_video.jpg' | relative_url }}"
-                 alt="{{ item.title | escape }} thumbnail"
-                 loading="lazy"
-                 {% if item.preview_gif %}data-preview="{{ item.preview_gif | relative_url }}"{% endif %}>
-          </a>
-          <div class="card-body">
-            <h3 class="card-title"><a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.title }}</a></h3>
-            {% if item.note %}<p class="card-text">{{ item.note }}</p>{% endif %}
-            <div class="card-actions">
-              {% if item.screenshot %}<a href="#" class="btn ghost" data-lightbox-src="{{ item.screenshot | relative_url }}">Preview</a>{% endif %}
-              <a class="btn" href="{{ item.link }}" target="_blank" rel="noopener">Watch</a>
-            </div>
-          </div>
-        </article>
-        {% endfor %}
-      </div>
-      <button class="scroll-btn right" data-target="#videos-track" aria-label="Scroll videos right">›</button>
-    </div>
-  {% else %}
-    <div class="gallery">
-      {% for item in site.data.videos %}
-      <article class="card">
-        <a class="thumb" href="{{ item.link }}" target="_blank" rel="noopener" aria-label="Open video">
-          <img src="{{ item.image | default: '/assets/images/placeholder_video.jpg' | relative_url }}"
-               alt="{{ item.title | escape }} thumbnail" loading="lazy">
-        </a>
-        <div class="card-body">
-          <h3 class="card-title"><a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.title }}</a></h3>
-          {% if item.note %}<p class="card-text">{{ item.note }}</p>{% endif %}
-          <div class="card-actions">
-            {% if item.screenshot %}<a href="#" class="btn ghost" data-lightbox-src="{{ item.screenshot | relative_url }}">Preview</a>{% endif %}
-            <a class="btn" href="{{ item.link }}" target="_blank" rel="noopener">Watch</a>
           </div>
         </div>
       </article>
@@ -238,3 +180,4 @@ title: "Home"
   document.querySelectorAll('.scroll-btn').forEach(init);
 })();
 </script>
+
